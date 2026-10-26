@@ -1,0 +1,783 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1830" height="1304" viewBox="0 0 1830 1304" font-family="Segoe UI, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="30" y="42" font-size="26" font-weight="700" fill="#222">MER — Clínica Médica (modelo lógico, v2)</text>
+<text x="30" y="70" font-size="14" fill="#555">PostgreSQL · schema <tspan fill="#1f5f99" font-weight="700">clinica</tspan> (cadastro, agenda, financeiro) e schema <tspan fill="#a8323a" font-weight="700">sensivel</tspan> (prontuário e auditoria) · notação pé-de-galinha</text>
+<g stroke="#333" stroke-width="1.4" fill="none">
+<polyline points="30,308.5 16,308.5 16,149.5 30,149.5"/>
+<line x1="16" y1="308.5" x2="30" y2="301.5"/><line x1="16" y1="308.5" x2="30" y2="308.5"/><line x1="16" y1="308.5" x2="30" y2="315.5"/><line x1="12" y1="301.5" x2="12" y2="315.5"/>
+<line x1="22" y1="142.5" x2="22" y2="156.5"/><line x1="12" y1="142.5" x2="12" y2="156.5"/>
+<polyline points="310,289.5 360,289.5 360,429.5 310,429.5"/>
+<line x1="324" y1="289.5" x2="310" y2="282.5"/><line x1="324" y1="289.5" x2="310" y2="289.5"/><line x1="324" y1="289.5" x2="310" y2="296.5"/><line x1="328" y1="282.5" x2="328" y2="296.5"/>
+<line x1="318" y1="422.5" x2="318" y2="436.5"/><line x1="328" y1="422.5" x2="328" y2="436.5"/>
+<polyline points="30,708.5 18,708.5 18,425.5 30,425.5"/>
+<line x1="16" y1="708.5" x2="30" y2="701.5"/><line x1="16" y1="708.5" x2="30" y2="708.5"/><line x1="16" y1="708.5" x2="30" y2="715.5"/><circle cx="8" cy="708.5" r="4.5" fill="#fff"/>
+<line x1="22" y1="418.5" x2="22" y2="432.5"/><line x1="12" y1="418.5" x2="12" y2="432.5"/>
+<polyline points="30,888.5 9,888.5 9,433.5 30,433.5"/>
+<line x1="16" y1="888.5" x2="30" y2="881.5"/><line x1="16" y1="888.5" x2="30" y2="888.5"/><line x1="16" y1="888.5" x2="30" y2="895.5"/><circle cx="8" cy="888.5" r="4.5" fill="#fff"/>
+<line x1="22" y1="426.5" x2="22" y2="440.5"/><line x1="12" y1="426.5" x2="12" y2="440.5"/>
+<polyline points="400,636.5 345,636.5 345,433.5 310,433.5"/>
+<line x1="386" y1="636.5" x2="400" y2="629.5"/><line x1="386" y1="636.5" x2="400" y2="636.5"/><line x1="386" y1="636.5" x2="400" y2="643.5"/><circle cx="378" cy="636.5" r="4.5" fill="#fff"/>
+<line x1="318" y1="426.5" x2="318" y2="440.5"/><line x1="328" y1="426.5" x2="328" y2="440.5"/>
+<polyline points="400,433.5 375,433.5 375,149.5 400,149.5"/>
+<line x1="386" y1="433.5" x2="400" y2="426.5"/><line x1="386" y1="433.5" x2="400" y2="433.5"/><line x1="386" y1="433.5" x2="400" y2="440.5"/><circle cx="378" cy="433.5" r="4.5" fill="#fff"/>
+<line x1="392" y1="142.5" x2="392" y2="156.5"/><circle cx="378" cy="149.5" r="4.5" fill="#fff"/>
+<polyline points="310,1078.5 322,1078.5 322,314.5 400,314.5"/>
+<line x1="324" y1="1078.5" x2="310" y2="1071.5"/><line x1="324" y1="1078.5" x2="310" y2="1078.5"/><line x1="324" y1="1078.5" x2="310" y2="1085.5"/><circle cx="332" cy="1078.5" r="4.5" fill="#fff"/>
+<line x1="392" y1="307.5" x2="392" y2="321.5"/><line x1="382" y1="307.5" x2="382" y2="321.5"/>
+<polyline points="400,617.5 385,617.5 385,319.5 400,319.5"/>
+<line x1="386" y1="617.5" x2="400" y2="610.5"/><line x1="386" y1="617.5" x2="400" y2="617.5"/><line x1="386" y1="617.5" x2="400" y2="624.5"/><circle cx="378" cy="617.5" r="4.5" fill="#fff"/>
+<line x1="392" y1="312.5" x2="392" y2="326.5"/><line x1="382" y1="312.5" x2="382" y2="326.5"/>
+<polyline points="400,674.5 330,674.5 330,144.5 400,144.5"/>
+<line x1="386" y1="674.5" x2="400" y2="667.5"/><line x1="386" y1="674.5" x2="400" y2="674.5"/><line x1="386" y1="674.5" x2="400" y2="681.5"/><circle cx="378" cy="674.5" r="4.5" fill="#fff"/>
+<line x1="392" y1="137.5" x2="392" y2="151.5"/><circle cx="378" cy="144.5" r="4.5" fill="#fff"/>
+<polyline points="400,968.5 365,968.5 365,579.5 400,579.5"/>
+<line x1="392" y1="961.5" x2="392" y2="975.5"/><circle cx="378" cy="968.5" r="4.5" fill="#fff"/>
+<line x1="392" y1="572.5" x2="392" y2="586.5"/><line x1="382" y1="572.5" x2="382" y2="586.5"/>
+<polyline points="680,655.5 715,655.5 715,149.5 770,149.5"/>
+<line x1="694" y1="655.5" x2="680" y2="648.5"/><line x1="694" y1="655.5" x2="680" y2="655.5"/><line x1="694" y1="655.5" x2="680" y2="662.5"/><circle cx="702" cy="655.5" r="4.5" fill="#fff"/>
+<line x1="762" y1="142.5" x2="762" y2="156.5"/><line x1="752" y1="142.5" x2="752" y2="156.5"/>
+<polyline points="770,308.5 748,308.5 748,153.5 770,153.5"/>
+<line x1="756" y1="308.5" x2="770" y2="301.5"/><line x1="756" y1="308.5" x2="770" y2="308.5"/><line x1="756" y1="308.5" x2="770" y2="315.5"/><line x1="752" y1="301.5" x2="752" y2="315.5"/>
+<line x1="762" y1="146.5" x2="762" y2="160.5"/><line x1="752" y1="146.5" x2="752" y2="160.5"/>
+<polyline points="680,693.5 700,693.5 700,583.5 680,583.5"/>
+<line x1="694" y1="693.5" x2="680" y2="686.5"/><line x1="694" y1="693.5" x2="680" y2="693.5"/><line x1="694" y1="693.5" x2="680" y2="700.5"/><circle cx="702" cy="693.5" r="4.5" fill="#fff"/>
+<line x1="688" y1="576.5" x2="688" y2="590.5"/><circle cx="702" cy="583.5" r="4.5" fill="#fff"/>
+<polyline points="770,598.5 735,598.5 735,575.5 680,575.5"/>
+<line x1="762" y1="591.5" x2="762" y2="605.5"/><circle cx="748" cy="598.5" r="4.5" fill="#fff"/>
+<line x1="688" y1="568.5" x2="688" y2="582.5"/><line x1="698" y1="568.5" x2="698" y2="582.5"/>
+<polyline points="770,968.5 750,968.5 750,579.5 680,579.5"/>
+<line x1="756" y1="968.5" x2="770" y2="961.5"/><line x1="756" y1="968.5" x2="770" y2="968.5"/><line x1="756" y1="968.5" x2="770" y2="975.5"/><circle cx="748" cy="968.5" r="4.5" fill="#fff"/>
+<line x1="688" y1="572.5" x2="688" y2="586.5"/><line x1="698" y1="572.5" x2="698" y2="586.5"/>
+<polyline points="1140,289.5 1095,289.5 1095,575.5 1050,575.5"/>
+<line x1="1126" y1="289.5" x2="1140" y2="282.5"/><line x1="1126" y1="289.5" x2="1140" y2="289.5"/><line x1="1126" y1="289.5" x2="1140" y2="296.5"/><circle cx="1118" cy="289.5" r="4.5" fill="#fff"/>
+<line x1="1058" y1="568.5" x2="1058" y2="582.5"/><line x1="1068" y1="568.5" x2="1068" y2="582.5"/>
+<polyline points="1140,598.5 1110,598.5 1110,579.5 1050,579.5"/>
+<line x1="1126" y1="598.5" x2="1140" y2="591.5"/><line x1="1126" y1="598.5" x2="1140" y2="598.5"/><line x1="1126" y1="598.5" x2="1140" y2="605.5"/><circle cx="1118" cy="598.5" r="4.5" fill="#fff"/>
+<line x1="1058" y1="572.5" x2="1058" y2="586.5"/><line x1="1068" y1="572.5" x2="1068" y2="586.5"/>
+<polyline points="1140,778.5 1125,778.5 1125,583.5 1050,583.5"/>
+<line x1="1126" y1="778.5" x2="1140" y2="771.5"/><line x1="1126" y1="778.5" x2="1140" y2="778.5"/><line x1="1126" y1="778.5" x2="1140" y2="785.5"/><circle cx="1118" cy="778.5" r="4.5" fill="#fff"/>
+<line x1="1058" y1="576.5" x2="1058" y2="590.5"/><line x1="1068" y1="576.5" x2="1068" y2="590.5"/>
+<polyline points="1420,308.5 1480,308.5 1480,289.5 1510,289.5"/>
+<line x1="1434" y1="308.5" x2="1420" y2="301.5"/><line x1="1434" y1="308.5" x2="1420" y2="308.5"/><line x1="1434" y1="308.5" x2="1420" y2="315.5"/><circle cx="1442" cy="308.5" r="4.5" fill="#fff"/>
+<line x1="1502" y1="282.5" x2="1502" y2="296.5"/><line x1="1492" y1="282.5" x2="1492" y2="296.5"/>
+<polyline points="1510,598.5 1470,598.5 1470,579.5 1420,579.5"/>
+<line x1="1496" y1="598.5" x2="1510" y2="591.5"/><line x1="1496" y1="598.5" x2="1510" y2="598.5"/><line x1="1496" y1="598.5" x2="1510" y2="605.5"/><line x1="1492" y1="591.5" x2="1492" y2="605.5"/>
+<line x1="1428" y1="572.5" x2="1428" y2="586.5"/><line x1="1438" y1="572.5" x2="1438" y2="586.5"/>
+<polyline points="1510,617.5 1490,617.5 1490,789.5 1510,789.5"/>
+<line x1="1496" y1="617.5" x2="1510" y2="610.5"/><line x1="1496" y1="617.5" x2="1510" y2="617.5"/><line x1="1496" y1="617.5" x2="1510" y2="624.5"/><circle cx="1488" cy="617.5" r="4.5" fill="#fff"/>
+<line x1="1502" y1="782.5" x2="1502" y2="796.5"/><line x1="1492" y1="782.5" x2="1492" y2="796.5"/>
+<polyline points="1420,797.5 1460,797.5 1460,949.5 1510,949.5"/>
+<line x1="1434" y1="797.5" x2="1420" y2="790.5"/><line x1="1434" y1="797.5" x2="1420" y2="797.5"/><line x1="1434" y1="797.5" x2="1420" y2="804.5"/><circle cx="1442" cy="797.5" r="4.5" fill="#fff"/>
+<line x1="1502" y1="942.5" x2="1502" y2="956.5"/><line x1="1492" y1="942.5" x2="1492" y2="956.5"/>
+</g>
+<text x="8" y="299.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="8" y="140.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="332" y="280.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">N</text>
+<text x="332" y="420.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">1</text>
+<text x="8" y="699.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="8" y="416.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="8" y="879.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="8" y="424.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="378" y="627.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="332" y="424.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">1</text>
+<text x="378" y="424.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="378" y="140.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="332" y="1069.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">N</text>
+<text x="378" y="305.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="378" y="608.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="378" y="310.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="378" y="665.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="378" y="135.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="378" y="959.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="378" y="570.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="702" y="646.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">N</text>
+<text x="748" y="140.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="748" y="299.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="748" y="144.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="702" y="684.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">N</text>
+<text x="702" y="574.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">1</text>
+<text x="748" y="589.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="702" y="566.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">1</text>
+<text x="748" y="959.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="702" y="570.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">1</text>
+<text x="1118" y="280.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="1072" y="566.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">1</text>
+<text x="1118" y="589.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="1072" y="570.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">1</text>
+<text x="1118" y="769.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="1072" y="574.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">1</text>
+<text x="1442" y="299.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">N</text>
+<text x="1488" y="280.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="1488" y="589.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="1442" y="570.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">1</text>
+<text x="1488" y="608.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">N</text>
+<text x="1488" y="780.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<text x="1442" y="788.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="start">N</text>
+<text x="1488" y="940.5" font-size="11" font-weight="700" fill="#b03a00" text-anchor="end">1</text>
+<rect x="33" y="113" width="280" height="87" rx="5" fill="#00000018"/>
+<rect x="30" y="110" width="280" height="87" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M30,140 V115 a5,5 0 0 1 5,-5 H305 a5,5 0 0 1 5,5 V140 Z" fill="#1f5f99"/>
+<text x="40" y="130" font-size="14" font-weight="700" fill="#fff">clinica.especialidade</text>
+<rect x="31" y="140" width="278" height="19" fill="#fff6d6"/>
+<text x="38" y="154" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="82" y="154" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_especialidade</text>
+<text x="302" y="154" font-size="11" fill="#777" text-anchor="end">serial</text>
+<line x1="30" y1="159" x2="310" y2="159" stroke="#eee"/>
+<text x="38" y="173" font-size="10.5" font-weight="700" fill="#8a5a00">UK</text>
+<text x="82" y="173" font-size="12" font-weight="400" fill="#222">nome</text>
+<text x="302" y="173" font-size="11" fill="#777" text-anchor="end">varchar(80)</text>
+<line x1="30" y1="178" x2="310" y2="178" stroke="#eee"/>
+<text x="38" y="192" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="192" font-size="12" font-weight="400" fill="#222">descricao</text>
+<text x="302" y="192" font-size="11" fill="#777" text-anchor="end">text</text>
+<rect x="33" y="253" width="280" height="87" rx="5" fill="#00000018"/>
+<rect x="30" y="250" width="280" height="87" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M30,280 V255 a5,5 0 0 1 5,-5 H305 a5,5 0 0 1 5,5 V280 Z" fill="#1f5f99"/>
+<text x="40" y="270" font-size="14" font-weight="700" fill="#fff">clinica.medico_especialidade</text>
+<text x="310" y="245" font-size="10.5" fill="#666" text-anchor="end" font-style="italic">associativa N:N (médico × especialidade)</text>
+<rect x="31" y="280" width="278" height="19" fill="#f3ead8"/>
+<text x="38" y="294" font-size="10.5" font-weight="700" fill="#8a5a00">PK,FK</text>
+<text x="82" y="294" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_medico</text>
+<text x="302" y="294" font-size="11" fill="#777" text-anchor="end">int</text>
+<rect x="31" y="299" width="278" height="19" fill="#f3ead8"/>
+<line x1="30" y1="299" x2="310" y2="299" stroke="#eee"/>
+<text x="38" y="313" font-size="10.5" font-weight="700" fill="#8a5a00">PK,FK</text>
+<text x="82" y="313" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_especialidade</text>
+<text x="302" y="313" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="30" y1="318" x2="310" y2="318" stroke="#eee"/>
+<text x="38" y="332" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="332" font-size="12" font-weight="400" fill="#222">rqe</text>
+<text x="302" y="332" font-size="11" fill="#777" text-anchor="end">varchar(10)</text>
+<rect x="33" y="393" width="280" height="182" rx="5" fill="#00000018"/>
+<rect x="30" y="390" width="280" height="182" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M30,420 V395 a5,5 0 0 1 5,-5 H305 a5,5 0 0 1 5,5 V420 Z" fill="#1f5f99"/>
+<text x="40" y="410" font-size="14" font-weight="700" fill="#fff">clinica.medico</text>
+<rect x="31" y="420" width="278" height="19" fill="#fff6d6"/>
+<text x="38" y="434" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="82" y="434" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_medico</text>
+<text x="302" y="434" font-size="11" fill="#777" text-anchor="end">serial</text>
+<line x1="30" y1="439" x2="310" y2="439" stroke="#eee"/>
+<text x="38" y="453" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="453" font-size="12" font-weight="400" fill="#222">nome</text>
+<text x="302" y="453" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<line x1="30" y1="458" x2="310" y2="458" stroke="#eee"/>
+<text x="38" y="472" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="472" font-size="12" font-weight="400" fill="#222">sexo</text>
+<text x="302" y="472" font-size="11" fill="#777" text-anchor="end">char(1)</text>
+<line x1="30" y1="477" x2="310" y2="477" stroke="#eee"/>
+<text x="38" y="491" font-size="10.5" font-weight="700" fill="#8a5a00">UK</text>
+<text x="82" y="491" font-size="12" font-weight="400" fill="#222">crm</text>
+<text x="302" y="491" font-size="11" fill="#777" text-anchor="end">varchar(10)</text>
+<line x1="30" y1="496" x2="310" y2="496" stroke="#eee"/>
+<text x="38" y="510" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="510" font-size="12" font-weight="400" fill="#222">uf_crm</text>
+<text x="302" y="510" font-size="11" fill="#777" text-anchor="end">char(2) (null)</text>
+<line x1="30" y1="515" x2="310" y2="515" stroke="#eee"/>
+<text x="38" y="529" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="529" font-size="12" font-weight="400" fill="#222">email</text>
+<text x="302" y="529" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<line x1="30" y1="534" x2="310" y2="534" stroke="#eee"/>
+<text x="38" y="548" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="548" font-size="12" font-weight="400" fill="#222">telefone</text>
+<text x="302" y="548" font-size="11" fill="#777" text-anchor="end">varchar(20)</text>
+<line x1="30" y1="553" x2="310" y2="553" stroke="#eee"/>
+<text x="38" y="567" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="567" font-size="12" font-weight="400" fill="#222">ativo</text>
+<text x="302" y="567" font-size="11" fill="#777" text-anchor="end">boolean</text>
+<rect x="33" y="653" width="280" height="125" rx="5" fill="#00000018"/>
+<rect x="30" y="650" width="280" height="125" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M30,680 V655 a5,5 0 0 1 5,-5 H305 a5,5 0 0 1 5,5 V680 Z" fill="#1f5f99"/>
+<text x="40" y="670" font-size="14" font-weight="700" fill="#fff">clinica.horario_atendimento</text>
+<rect x="31" y="680" width="278" height="19" fill="#fff6d6"/>
+<text x="38" y="694" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="82" y="694" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_horario</text>
+<text x="302" y="694" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="31" y="699" width="278" height="19" fill="#e8f1fb"/>
+<line x1="30" y1="699" x2="310" y2="699" stroke="#eee"/>
+<text x="38" y="713" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="82" y="713" font-size="12" font-weight="400" fill="#222">id_medico</text>
+<text x="302" y="713" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="30" y1="718" x2="310" y2="718" stroke="#eee"/>
+<text x="38" y="732" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="732" font-size="12" font-weight="400" fill="#222">dia_semana</text>
+<text x="302" y="732" font-size="11" fill="#777" text-anchor="end">smallint</text>
+<line x1="30" y1="737" x2="310" y2="737" stroke="#eee"/>
+<text x="38" y="751" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="751" font-size="12" font-weight="400" fill="#222">hora_inicio</text>
+<text x="302" y="751" font-size="11" fill="#777" text-anchor="end">time</text>
+<line x1="30" y1="756" x2="310" y2="756" stroke="#eee"/>
+<text x="38" y="770" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="770" font-size="12" font-weight="400" fill="#222">hora_fim</text>
+<text x="302" y="770" font-size="11" fill="#777" text-anchor="end">time</text>
+<rect x="33" y="833" width="280" height="144" rx="5" fill="#00000018"/>
+<rect x="30" y="830" width="280" height="144" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M30,860 V835 a5,5 0 0 1 5,-5 H305 a5,5 0 0 1 5,5 V860 Z" fill="#1f5f99"/>
+<text x="40" y="850" font-size="14" font-weight="700" fill="#fff">clinica.bloqueio_agenda</text>
+<rect x="31" y="860" width="278" height="19" fill="#fff6d6"/>
+<text x="38" y="874" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="82" y="874" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_bloqueio</text>
+<text x="302" y="874" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="31" y="879" width="278" height="19" fill="#e8f1fb"/>
+<line x1="30" y1="879" x2="310" y2="879" stroke="#eee"/>
+<text x="38" y="893" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="82" y="893" font-size="12" font-weight="400" fill="#222">id_medico</text>
+<text x="302" y="893" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="30" y1="898" x2="310" y2="898" stroke="#eee"/>
+<text x="38" y="912" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="912" font-size="12" font-weight="400" fill="#222">inicio</text>
+<text x="302" y="912" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="30" y1="917" x2="310" y2="917" stroke="#eee"/>
+<text x="38" y="931" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="931" font-size="12" font-weight="400" fill="#222">fim</text>
+<text x="302" y="931" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="30" y1="936" x2="310" y2="936" stroke="#eee"/>
+<text x="38" y="950" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="950" font-size="12" font-weight="400" fill="#222">motivo</text>
+<text x="302" y="950" font-size="11" fill="#777" text-anchor="end">varchar(20)</text>
+<line x1="30" y1="955" x2="310" y2="955" stroke="#eee"/>
+<text x="38" y="969" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="969" font-size="12" font-weight="400" fill="#222">observacao</text>
+<text x="302" y="969" font-size="11" fill="#777" text-anchor="end">text</text>
+<rect x="33" y="1023" width="280" height="144" rx="5" fill="#00000018"/>
+<rect x="30" y="1020" width="280" height="144" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M30,1050 V1025 a5,5 0 0 1 5,-5 H305 a5,5 0 0 1 5,5 V1050 Z" fill="#1f5f99"/>
+<text x="40" y="1040" font-size="14" font-weight="700" fill="#fff">clinica.contato_emergencia</text>
+<rect x="31" y="1050" width="278" height="19" fill="#fff6d6"/>
+<text x="38" y="1064" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="82" y="1064" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_contato</text>
+<text x="302" y="1064" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="31" y="1069" width="278" height="19" fill="#e8f1fb"/>
+<line x1="30" y1="1069" x2="310" y2="1069" stroke="#eee"/>
+<text x="38" y="1083" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="82" y="1083" font-size="12" font-weight="400" fill="#222">id_paciente</text>
+<text x="302" y="1083" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="30" y1="1088" x2="310" y2="1088" stroke="#eee"/>
+<text x="38" y="1102" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="1102" font-size="12" font-weight="400" fill="#222">nome</text>
+<text x="302" y="1102" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<line x1="30" y1="1107" x2="310" y2="1107" stroke="#eee"/>
+<text x="38" y="1121" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="1121" font-size="12" font-weight="400" fill="#222">parentesco</text>
+<text x="302" y="1121" font-size="11" fill="#777" text-anchor="end">varchar(30)</text>
+<line x1="30" y1="1126" x2="310" y2="1126" stroke="#eee"/>
+<text x="38" y="1140" font-size="10.5" font-weight="700" fill="#8a5a00">UK</text>
+<text x="82" y="1140" font-size="12" font-weight="400" fill="#222">telefone</text>
+<text x="302" y="1140" font-size="11" fill="#777" text-anchor="end">varchar(20)</text>
+<line x1="30" y1="1145" x2="310" y2="1145" stroke="#eee"/>
+<text x="38" y="1159" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="82" y="1159" font-size="12" font-weight="400" fill="#222">principal</text>
+<text x="302" y="1159" font-size="11" fill="#777" text-anchor="end">boolean</text>
+<rect x="403" y="113" width="280" height="125" rx="5" fill="#00000018"/>
+<rect x="400" y="110" width="280" height="125" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M400,140 V115 a5,5 0 0 1 5,-5 H675 a5,5 0 0 1 5,5 V140 Z" fill="#1f5f99"/>
+<text x="410" y="130" font-size="14" font-weight="700" fill="#fff">clinica.convenio</text>
+<rect x="401" y="140" width="278" height="19" fill="#fff6d6"/>
+<text x="408" y="154" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="452" y="154" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_convenio</text>
+<text x="672" y="154" font-size="11" fill="#777" text-anchor="end">serial</text>
+<line x1="400" y1="159" x2="680" y2="159" stroke="#eee"/>
+<text x="408" y="173" font-size="10.5" font-weight="700" fill="#8a5a00">UK</text>
+<text x="452" y="173" font-size="12" font-weight="400" fill="#222">nome</text>
+<text x="672" y="173" font-size="11" fill="#777" text-anchor="end">varchar(80)</text>
+<line x1="400" y1="178" x2="680" y2="178" stroke="#eee"/>
+<text x="408" y="192" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="192" font-size="12" font-weight="400" fill="#222">percentual_cobertura</text>
+<text x="672" y="192" font-size="11" fill="#777" text-anchor="end">numeric(5,2)</text>
+<line x1="400" y1="197" x2="680" y2="197" stroke="#eee"/>
+<text x="408" y="211" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="211" font-size="12" font-weight="400" fill="#222">telefone</text>
+<text x="672" y="211" font-size="11" fill="#777" text-anchor="end">varchar(20)</text>
+<line x1="400" y1="216" x2="680" y2="216" stroke="#eee"/>
+<text x="408" y="230" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="230" font-size="12" font-weight="400" fill="#222">ativo</text>
+<text x="672" y="230" font-size="11" fill="#777" text-anchor="end">boolean</text>
+<rect x="403" y="283" width="280" height="220" rx="5" fill="#00000018"/>
+<rect x="400" y="280" width="280" height="220" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M400,310 V285 a5,5 0 0 1 5,-5 H675 a5,5 0 0 1 5,5 V310 Z" fill="#1f5f99"/>
+<text x="410" y="300" font-size="14" font-weight="700" fill="#fff">clinica.paciente</text>
+<rect x="401" y="310" width="278" height="19" fill="#fff6d6"/>
+<text x="408" y="324" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="452" y="324" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_paciente</text>
+<text x="672" y="324" font-size="11" fill="#777" text-anchor="end">serial</text>
+<line x1="400" y1="329" x2="680" y2="329" stroke="#eee"/>
+<text x="408" y="343" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="343" font-size="12" font-weight="400" fill="#222">nome</text>
+<text x="672" y="343" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<line x1="400" y1="348" x2="680" y2="348" stroke="#eee"/>
+<text x="408" y="362" font-size="10.5" font-weight="700" fill="#8a5a00">UK</text>
+<text x="452" y="362" font-size="12" font-weight="400" fill="#222">cpf</text>
+<text x="672" y="362" font-size="11" fill="#777" text-anchor="end">char(11) (null)</text>
+<line x1="400" y1="367" x2="680" y2="367" stroke="#eee"/>
+<text x="408" y="381" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="381" font-size="12" font-weight="400" fill="#222">data_nascimento</text>
+<text x="672" y="381" font-size="11" fill="#777" text-anchor="end">date</text>
+<line x1="400" y1="386" x2="680" y2="386" stroke="#eee"/>
+<text x="408" y="400" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="400" font-size="12" font-weight="400" fill="#222">telefone</text>
+<text x="672" y="400" font-size="11" fill="#777" text-anchor="end">varchar(20)</text>
+<line x1="400" y1="405" x2="680" y2="405" stroke="#eee"/>
+<text x="408" y="419" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="419" font-size="12" font-weight="400" fill="#222">email</text>
+<text x="672" y="419" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<rect x="401" y="424" width="278" height="19" fill="#e8f1fb"/>
+<line x1="400" y1="424" x2="680" y2="424" stroke="#eee"/>
+<text x="408" y="438" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="452" y="438" font-size="12" font-weight="400" fill="#222">id_convenio</text>
+<text x="672" y="438" font-size="11" fill="#777" text-anchor="end">int (null)</text>
+<line x1="400" y1="443" x2="680" y2="443" stroke="#eee"/>
+<text x="408" y="457" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="457" font-size="12" font-weight="400" fill="#222">numero_carteirinha</text>
+<text x="672" y="457" font-size="11" fill="#777" text-anchor="end">varchar(30)</text>
+<line x1="400" y1="462" x2="680" y2="462" stroke="#eee"/>
+<text x="408" y="476" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="476" font-size="12" font-weight="400" fill="#222">data_regularizacao</text>
+<text x="672" y="476" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="400" y1="481" x2="680" y2="481" stroke="#eee"/>
+<text x="408" y="495" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="495" font-size="12" font-weight="400" fill="#222">data_cadastro</text>
+<text x="672" y="495" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<rect x="403" y="543" width="280" height="315" rx="5" fill="#00000018"/>
+<rect x="400" y="540" width="280" height="315" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M400,570 V545 a5,5 0 0 1 5,-5 H675 a5,5 0 0 1 5,5 V570 Z" fill="#1f5f99"/>
+<text x="410" y="560" font-size="14" font-weight="700" fill="#fff">clinica.consulta</text>
+<rect x="401" y="570" width="278" height="19" fill="#fff6d6"/>
+<text x="408" y="584" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="452" y="584" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_consulta</text>
+<text x="672" y="584" font-size="11" fill="#777" text-anchor="end">serial</text>
+<line x1="400" y1="589" x2="680" y2="589" stroke="#eee"/>
+<text x="408" y="603" font-size="10.5" font-weight="700" fill="#8a5a00">UK</text>
+<text x="452" y="603" font-size="12" font-weight="400" fill="#222">protocolo</text>
+<text x="672" y="603" font-size="11" fill="#777" text-anchor="end">varchar(14)</text>
+<rect x="401" y="608" width="278" height="19" fill="#e8f1fb"/>
+<line x1="400" y1="608" x2="680" y2="608" stroke="#eee"/>
+<text x="408" y="622" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="452" y="622" font-size="12" font-weight="400" fill="#222">id_paciente</text>
+<text x="672" y="622" font-size="11" fill="#777" text-anchor="end">int</text>
+<rect x="401" y="627" width="278" height="19" fill="#e8f1fb"/>
+<line x1="400" y1="627" x2="680" y2="627" stroke="#eee"/>
+<text x="408" y="641" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="452" y="641" font-size="12" font-weight="400" fill="#222">id_medico</text>
+<text x="672" y="641" font-size="11" fill="#777" text-anchor="end">int</text>
+<rect x="401" y="646" width="278" height="19" fill="#e8f1fb"/>
+<line x1="400" y1="646" x2="680" y2="646" stroke="#eee"/>
+<text x="408" y="660" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="452" y="660" font-size="12" font-weight="400" fill="#222">id_tipo_consulta</text>
+<text x="672" y="660" font-size="11" fill="#777" text-anchor="end">int</text>
+<rect x="401" y="665" width="278" height="19" fill="#e8f1fb"/>
+<line x1="400" y1="665" x2="680" y2="665" stroke="#eee"/>
+<text x="408" y="679" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="452" y="679" font-size="12" font-weight="400" fill="#222">id_convenio</text>
+<text x="672" y="679" font-size="11" fill="#777" text-anchor="end">int (null)</text>
+<rect x="401" y="684" width="278" height="19" fill="#e8f1fb"/>
+<line x1="400" y1="684" x2="680" y2="684" stroke="#eee"/>
+<text x="408" y="698" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="452" y="698" font-size="12" font-weight="400" fill="#222">id_consulta_origem</text>
+<text x="672" y="698" font-size="11" fill="#777" text-anchor="end">int (null)</text>
+<line x1="400" y1="703" x2="680" y2="703" stroke="#eee"/>
+<text x="408" y="717" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="717" font-size="12" font-weight="400" fill="#222">data_hora_inicio</text>
+<text x="672" y="717" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="400" y1="722" x2="680" y2="722" stroke="#eee"/>
+<text x="408" y="736" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="736" font-size="12" font-weight="400" fill="#222">data_hora_fim</text>
+<text x="672" y="736" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="400" y1="741" x2="680" y2="741" stroke="#eee"/>
+<text x="408" y="755" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="755" font-size="12" font-weight="400" fill="#222">status</text>
+<text x="672" y="755" font-size="11" fill="#777" text-anchor="end">varchar(12)</text>
+<line x1="400" y1="760" x2="680" y2="760" stroke="#eee"/>
+<text x="408" y="774" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="774" font-size="12" font-weight="400" fill="#222">valor_tabela</text>
+<text x="672" y="774" font-size="11" fill="#777" text-anchor="end">numeric(10,2)</text>
+<line x1="400" y1="779" x2="680" y2="779" stroke="#eee"/>
+<text x="408" y="793" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="793" font-size="12" font-weight="400" fill="#222">percentual_cobertura</text>
+<text x="672" y="793" font-size="11" fill="#777" text-anchor="end">numeric(5,2)</text>
+<line x1="400" y1="798" x2="680" y2="798" stroke="#eee"/>
+<text x="408" y="812" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="812" font-size="12" font-weight="400" fill="#222">agendada_em</text>
+<text x="672" y="812" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="400" y1="817" x2="680" y2="817" stroke="#eee"/>
+<text x="408" y="831" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="831" font-size="12" font-weight="400" fill="#222">confirmada_em</text>
+<text x="672" y="831" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="400" y1="836" x2="680" y2="836" stroke="#eee"/>
+<text x="408" y="850" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="850" font-size="12" font-weight="400" fill="#222">cancelada_em</text>
+<text x="672" y="850" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<rect x="403" y="913" width="280" height="201" rx="5" fill="#00000018"/>
+<rect x="400" y="910" width="280" height="201" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M400,940 V915 a5,5 0 0 1 5,-5 H675 a5,5 0 0 1 5,5 V940 Z" fill="#1f5f99"/>
+<text x="410" y="930" font-size="14" font-weight="700" fill="#fff">clinica.pagamento</text>
+<rect x="401" y="940" width="278" height="19" fill="#fff6d6"/>
+<text x="408" y="954" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="452" y="954" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_pagamento</text>
+<text x="672" y="954" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="401" y="959" width="278" height="19" fill="#e8f1fb"/>
+<line x1="400" y1="959" x2="680" y2="959" stroke="#eee"/>
+<text x="408" y="973" font-size="10.5" font-weight="700" fill="#8a5a00">FK,UK</text>
+<text x="452" y="973" font-size="12" font-weight="400" fill="#222">id_consulta</text>
+<text x="672" y="973" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="400" y1="978" x2="680" y2="978" stroke="#eee"/>
+<text x="408" y="992" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="992" font-size="12" font-weight="400" fill="#222">valor_total</text>
+<text x="672" y="992" font-size="11" fill="#777" text-anchor="end">numeric(10,2)</text>
+<line x1="400" y1="997" x2="680" y2="997" stroke="#eee"/>
+<text x="408" y="1011" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="1011" font-size="12" font-weight="400" fill="#222">valor_convenio</text>
+<text x="672" y="1011" font-size="11" fill="#777" text-anchor="end">numeric(10,2)</text>
+<line x1="400" y1="1016" x2="680" y2="1016" stroke="#eee"/>
+<text x="408" y="1030" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="1030" font-size="12" font-weight="400" fill="#222">valor_paciente</text>
+<text x="672" y="1030" font-size="11" fill="#777" text-anchor="end">numeric(10,2)</text>
+<line x1="400" y1="1035" x2="680" y2="1035" stroke="#eee"/>
+<text x="408" y="1049" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="1049" font-size="12" font-weight="400" fill="#222">regra_aplicada</text>
+<text x="672" y="1049" font-size="11" fill="#777" text-anchor="end">varchar(30)</text>
+<line x1="400" y1="1054" x2="680" y2="1054" stroke="#eee"/>
+<text x="408" y="1068" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="1068" font-size="12" font-weight="400" fill="#222">status</text>
+<text x="672" y="1068" font-size="11" fill="#777" text-anchor="end">varchar(10)</text>
+<line x1="400" y1="1073" x2="680" y2="1073" stroke="#eee"/>
+<text x="408" y="1087" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="1087" font-size="12" font-weight="400" fill="#222">gerado_em</text>
+<text x="672" y="1087" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="400" y1="1092" x2="680" y2="1092" stroke="#eee"/>
+<text x="408" y="1106" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="452" y="1106" font-size="12" font-weight="400" fill="#222">pago_em</text>
+<text x="672" y="1106" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<rect x="773" y="113" width="280" height="87" rx="5" fill="#00000018"/>
+<rect x="770" y="110" width="280" height="87" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M770,140 V115 a5,5 0 0 1 5,-5 H1045 a5,5 0 0 1 5,5 V140 Z" fill="#1f5f99"/>
+<text x="780" y="130" font-size="14" font-weight="700" fill="#fff">clinica.tipo_consulta</text>
+<rect x="771" y="140" width="278" height="19" fill="#fff6d6"/>
+<text x="778" y="154" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="822" y="154" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_tipo_consulta</text>
+<text x="1042" y="154" font-size="11" fill="#777" text-anchor="end">serial</text>
+<line x1="770" y1="159" x2="1050" y2="159" stroke="#eee"/>
+<text x="778" y="173" font-size="10.5" font-weight="700" fill="#8a5a00">UK</text>
+<text x="822" y="173" font-size="12" font-weight="400" fill="#222">nome</text>
+<text x="1042" y="173" font-size="11" fill="#777" text-anchor="end">varchar(30)</text>
+<line x1="770" y1="178" x2="1050" y2="178" stroke="#eee"/>
+<text x="778" y="192" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="192" font-size="12" font-weight="400" fill="#222">duracao_minutos</text>
+<text x="1042" y="192" font-size="11" fill="#777" text-anchor="end">int</text>
+<rect x="773" y="253" width="280" height="125" rx="5" fill="#00000018"/>
+<rect x="770" y="250" width="280" height="125" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M770,280 V255 a5,5 0 0 1 5,-5 H1045 a5,5 0 0 1 5,5 V280 Z" fill="#1f5f99"/>
+<text x="780" y="270" font-size="14" font-weight="700" fill="#fff">clinica.tabela_preco</text>
+<rect x="771" y="280" width="278" height="19" fill="#fff6d6"/>
+<text x="778" y="294" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="822" y="294" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_preco</text>
+<text x="1042" y="294" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="771" y="299" width="278" height="19" fill="#e8f1fb"/>
+<line x1="770" y1="299" x2="1050" y2="299" stroke="#eee"/>
+<text x="778" y="313" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="822" y="313" font-size="12" font-weight="400" fill="#222">id_tipo_consulta</text>
+<text x="1042" y="313" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="770" y1="318" x2="1050" y2="318" stroke="#eee"/>
+<text x="778" y="332" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="332" font-size="12" font-weight="400" fill="#222">valor</text>
+<text x="1042" y="332" font-size="11" fill="#777" text-anchor="end">numeric(10,2)</text>
+<line x1="770" y1="337" x2="1050" y2="337" stroke="#eee"/>
+<text x="778" y="351" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="351" font-size="12" font-weight="400" fill="#222">vigencia_inicio</text>
+<text x="1042" y="351" font-size="11" fill="#777" text-anchor="end">date</text>
+<line x1="770" y1="356" x2="1050" y2="356" stroke="#eee"/>
+<text x="778" y="370" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="370" font-size="12" font-weight="400" fill="#222">vigencia_fim</text>
+<text x="1042" y="370" font-size="11" fill="#777" text-anchor="end">date (null)</text>
+<rect x="773" y="543" width="280" height="182" rx="5" fill="#00000018"/>
+<rect x="770" y="540" width="280" height="182" rx="5" fill="#fff" stroke="#a8323a" stroke-width="1.6"/>
+<path d="M770,570 V545 a5,5 0 0 1 5,-5 H1045 a5,5 0 0 1 5,5 V570 Z" fill="#a8323a"/>
+<text x="780" y="560" font-size="14" font-weight="700" fill="#fff">sensivel.atendimento</text>
+<rect x="771" y="570" width="278" height="19" fill="#fff6d6"/>
+<text x="778" y="584" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="822" y="584" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_atendimento</text>
+<text x="1042" y="584" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="771" y="589" width="278" height="19" fill="#e8f1fb"/>
+<line x1="770" y1="589" x2="1050" y2="589" stroke="#eee"/>
+<text x="778" y="603" font-size="10.5" font-weight="700" fill="#8a5a00">FK,UK</text>
+<text x="822" y="603" font-size="12" font-weight="400" fill="#222">id_consulta</text>
+<text x="1042" y="603" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="770" y1="608" x2="1050" y2="608" stroke="#eee"/>
+<text x="778" y="622" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="622" font-size="12" font-weight="400" fill="#222">inicio_atendimento</text>
+<text x="1042" y="622" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="770" y1="627" x2="1050" y2="627" stroke="#eee"/>
+<text x="778" y="641" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="641" font-size="12" font-weight="400" fill="#222">fim_atendimento</text>
+<text x="1042" y="641" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="770" y1="646" x2="1050" y2="646" stroke="#eee"/>
+<text x="778" y="660" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="660" font-size="12" font-weight="400" fill="#222">queixa_principal</text>
+<text x="1042" y="660" font-size="11" fill="#777" text-anchor="end">text</text>
+<line x1="770" y1="665" x2="1050" y2="665" stroke="#eee"/>
+<text x="778" y="679" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="679" font-size="12" font-weight="400" fill="#222">anamnese</text>
+<text x="1042" y="679" font-size="11" fill="#777" text-anchor="end">text</text>
+<line x1="770" y1="684" x2="1050" y2="684" stroke="#eee"/>
+<text x="778" y="698" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="698" font-size="12" font-weight="400" fill="#222">dados_clinicos</text>
+<text x="1042" y="698" font-size="11" fill="#777" text-anchor="end">jsonb</text>
+<line x1="770" y1="703" x2="1050" y2="703" stroke="#eee"/>
+<text x="778" y="717" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="717" font-size="12" font-weight="400" fill="#222">observacoes</text>
+<text x="1042" y="717" font-size="11" fill="#777" text-anchor="end">text</text>
+<rect x="773" y="913" width="280" height="201" rx="5" fill="#00000018"/>
+<rect x="770" y="910" width="280" height="201" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M770,940 V915 a5,5 0 0 1 5,-5 H1045 a5,5 0 0 1 5,5 V940 Z" fill="#1f5f99"/>
+<text x="780" y="930" font-size="14" font-weight="700" fill="#fff">clinica.aviso</text>
+<rect x="771" y="940" width="278" height="19" fill="#fff6d6"/>
+<text x="778" y="954" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="822" y="954" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_aviso</text>
+<text x="1042" y="954" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="771" y="959" width="278" height="19" fill="#e8f1fb"/>
+<line x1="770" y1="959" x2="1050" y2="959" stroke="#eee"/>
+<text x="778" y="973" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="822" y="973" font-size="12" font-weight="400" fill="#222">id_consulta</text>
+<text x="1042" y="973" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="770" y1="978" x2="1050" y2="978" stroke="#eee"/>
+<text x="778" y="992" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="992" font-size="12" font-weight="400" fill="#222">canal</text>
+<text x="1042" y="992" font-size="11" fill="#777" text-anchor="end">varchar(10)</text>
+<line x1="770" y1="997" x2="1050" y2="997" stroke="#eee"/>
+<text x="778" y="1011" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="1011" font-size="12" font-weight="400" fill="#222">destino</text>
+<text x="1042" y="1011" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<line x1="770" y1="1016" x2="1050" y2="1016" stroke="#eee"/>
+<text x="778" y="1030" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="1030" font-size="12" font-weight="400" fill="#222">programado_para</text>
+<text x="1042" y="1030" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="770" y1="1035" x2="1050" y2="1035" stroke="#eee"/>
+<text x="778" y="1049" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="1049" font-size="12" font-weight="400" fill="#222">enviado_em</text>
+<text x="1042" y="1049" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="770" y1="1054" x2="1050" y2="1054" stroke="#eee"/>
+<text x="778" y="1068" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="1068" font-size="12" font-weight="400" fill="#222">status_envio</text>
+<text x="1042" y="1068" font-size="11" fill="#777" text-anchor="end">varchar(10)</text>
+<line x1="770" y1="1073" x2="1050" y2="1073" stroke="#eee"/>
+<text x="778" y="1087" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="1087" font-size="12" font-weight="400" fill="#222">resposta</text>
+<text x="1042" y="1087" font-size="11" fill="#777" text-anchor="end">varchar(15)</text>
+<line x1="770" y1="1092" x2="1050" y2="1092" stroke="#eee"/>
+<text x="778" y="1106" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="822" y="1106" font-size="12" font-weight="400" fill="#222">respondido_em</text>
+<text x="1042" y="1106" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<rect x="1143" y="253" width="280" height="106" rx="5" fill="#00000018"/>
+<rect x="1140" y="250" width="280" height="106" rx="5" fill="#fff" stroke="#a8323a" stroke-width="1.6"/>
+<path d="M1140,280 V255 a5,5 0 0 1 5,-5 H1415 a5,5 0 0 1 5,5 V280 Z" fill="#a8323a"/>
+<text x="1150" y="270" font-size="14" font-weight="700" fill="#fff">sensivel.diagnostico</text>
+<text x="1420" y="245" font-size="10.5" fill="#666" text-anchor="end" font-style="italic">associativa N:N (atendimento × CID)</text>
+<rect x="1141" y="280" width="278" height="19" fill="#f3ead8"/>
+<text x="1148" y="294" font-size="10.5" font-weight="700" fill="#8a5a00">PK,FK</text>
+<text x="1192" y="294" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_atendimento</text>
+<text x="1412" y="294" font-size="11" fill="#777" text-anchor="end">int</text>
+<rect x="1141" y="299" width="278" height="19" fill="#f3ead8"/>
+<line x1="1140" y1="299" x2="1420" y2="299" stroke="#eee"/>
+<text x="1148" y="313" font-size="10.5" font-weight="700" fill="#8a5a00">PK,FK</text>
+<text x="1192" y="313" font-size="12" font-weight="700" fill="#222" text-decoration="underline">codigo_cid</text>
+<text x="1412" y="313" font-size="11" fill="#777" text-anchor="end">varchar(8)</text>
+<line x1="1140" y1="318" x2="1420" y2="318" stroke="#eee"/>
+<text x="1148" y="332" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="332" font-size="12" font-weight="400" fill="#222">principal</text>
+<text x="1412" y="332" font-size="11" fill="#777" text-anchor="end">boolean</text>
+<line x1="1140" y1="337" x2="1420" y2="337" stroke="#eee"/>
+<text x="1148" y="351" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="351" font-size="12" font-weight="400" fill="#222">observacao</text>
+<text x="1412" y="351" font-size="11" fill="#777" text-anchor="end">text</text>
+<rect x="1143" y="543" width="280" height="125" rx="5" fill="#00000018"/>
+<rect x="1140" y="540" width="280" height="125" rx="5" fill="#fff" stroke="#a8323a" stroke-width="1.6"/>
+<path d="M1140,570 V545 a5,5 0 0 1 5,-5 H1415 a5,5 0 0 1 5,5 V570 Z" fill="#a8323a"/>
+<text x="1150" y="560" font-size="14" font-weight="700" fill="#fff">sensivel.prescricao</text>
+<rect x="1141" y="570" width="278" height="19" fill="#fff6d6"/>
+<text x="1148" y="584" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="1192" y="584" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_prescricao</text>
+<text x="1412" y="584" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="1141" y="589" width="278" height="19" fill="#e8f1fb"/>
+<line x1="1140" y1="589" x2="1420" y2="589" stroke="#eee"/>
+<text x="1148" y="603" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="1192" y="603" font-size="12" font-weight="400" fill="#222">id_atendimento</text>
+<text x="1412" y="603" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="1140" y1="608" x2="1420" y2="608" stroke="#eee"/>
+<text x="1148" y="622" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="622" font-size="12" font-weight="400" fill="#222">emitida_em</text>
+<text x="1412" y="622" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="1140" y1="627" x2="1420" y2="627" stroke="#eee"/>
+<text x="1148" y="641" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="641" font-size="12" font-weight="400" fill="#222">validade_dias</text>
+<text x="1412" y="641" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="1140" y1="646" x2="1420" y2="646" stroke="#eee"/>
+<text x="1148" y="660" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="660" font-size="12" font-weight="400" fill="#222">observacao</text>
+<text x="1412" y="660" font-size="11" fill="#777" text-anchor="end">text</text>
+<rect x="1143" y="723" width="280" height="125" rx="5" fill="#00000018"/>
+<rect x="1140" y="720" width="280" height="125" rx="5" fill="#fff" stroke="#a8323a" stroke-width="1.6"/>
+<path d="M1140,750 V725 a5,5 0 0 1 5,-5 H1415 a5,5 0 0 1 5,5 V750 Z" fill="#a8323a"/>
+<text x="1150" y="740" font-size="14" font-weight="700" fill="#fff">sensivel.exame_solicitado</text>
+<text x="1420" y="715" font-size="10.5" fill="#666" text-anchor="end" font-style="italic">associativa N:N (atendimento × exame)</text>
+<rect x="1141" y="750" width="278" height="19" fill="#fff6d6"/>
+<text x="1148" y="764" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="1192" y="764" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_exame_solicitado</text>
+<text x="1412" y="764" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="1141" y="769" width="278" height="19" fill="#e8f1fb"/>
+<line x1="1140" y1="769" x2="1420" y2="769" stroke="#eee"/>
+<text x="1148" y="783" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="1192" y="783" font-size="12" font-weight="400" fill="#222">id_atendimento</text>
+<text x="1412" y="783" font-size="11" fill="#777" text-anchor="end">int</text>
+<rect x="1141" y="788" width="278" height="19" fill="#e8f1fb"/>
+<line x1="1140" y1="788" x2="1420" y2="788" stroke="#eee"/>
+<text x="1148" y="802" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="1192" y="802" font-size="12" font-weight="400" fill="#222">id_exame</text>
+<text x="1412" y="802" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="1140" y1="807" x2="1420" y2="807" stroke="#eee"/>
+<text x="1148" y="821" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="821" font-size="12" font-weight="400" fill="#222">urgente</text>
+<text x="1412" y="821" font-size="11" fill="#777" text-anchor="end">boolean</text>
+<line x1="1140" y1="826" x2="1420" y2="826" stroke="#eee"/>
+<text x="1148" y="840" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="840" font-size="12" font-weight="400" fill="#222">justificativa</text>
+<text x="1412" y="840" font-size="11" fill="#777" text-anchor="end">text</text>
+<rect x="1143" y="913" width="280" height="182" rx="5" fill="#00000018"/>
+<rect x="1140" y="910" width="280" height="182" rx="5" fill="#fff" stroke="#a8323a" stroke-width="1.6"/>
+<path d="M1140,940 V915 a5,5 0 0 1 5,-5 H1415 a5,5 0 0 1 5,5 V940 Z" fill="#a8323a"/>
+<text x="1150" y="930" font-size="14" font-weight="700" fill="#fff">sensivel.auditoria_prontuario</text>
+<rect x="1141" y="940" width="278" height="19" fill="#fff6d6"/>
+<text x="1148" y="954" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="1192" y="954" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_auditoria</text>
+<text x="1412" y="954" font-size="11" fill="#777" text-anchor="end">bigserial</text>
+<line x1="1140" y1="959" x2="1420" y2="959" stroke="#eee"/>
+<text x="1148" y="973" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="973" font-size="12" font-weight="400" fill="#222">tabela</text>
+<text x="1412" y="973" font-size="11" fill="#777" text-anchor="end">varchar(40)</text>
+<line x1="1140" y1="978" x2="1420" y2="978" stroke="#eee"/>
+<text x="1148" y="992" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="992" font-size="12" font-weight="400" fill="#222">id_registro</text>
+<text x="1412" y="992" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="1140" y1="997" x2="1420" y2="997" stroke="#eee"/>
+<text x="1148" y="1011" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="1011" font-size="12" font-weight="400" fill="#222">operacao</text>
+<text x="1412" y="1011" font-size="11" fill="#777" text-anchor="end">varchar(10)</text>
+<line x1="1140" y1="1016" x2="1420" y2="1016" stroke="#eee"/>
+<text x="1148" y="1030" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="1030" font-size="12" font-weight="400" fill="#222">usuario</text>
+<text x="1412" y="1030" font-size="11" fill="#777" text-anchor="end">varchar(60)</text>
+<line x1="1140" y1="1035" x2="1420" y2="1035" stroke="#eee"/>
+<text x="1148" y="1049" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="1049" font-size="12" font-weight="400" fill="#222">data_hora</text>
+<text x="1412" y="1049" font-size="11" fill="#777" text-anchor="end">timestamp</text>
+<line x1="1140" y1="1054" x2="1420" y2="1054" stroke="#eee"/>
+<text x="1148" y="1068" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="1068" font-size="12" font-weight="400" fill="#222">dados_antes</text>
+<text x="1412" y="1068" font-size="11" fill="#777" text-anchor="end">jsonb</text>
+<line x1="1140" y1="1073" x2="1420" y2="1073" stroke="#eee"/>
+<text x="1148" y="1087" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1192" y="1087" font-size="12" font-weight="400" fill="#222">dados_depois</text>
+<text x="1412" y="1087" font-size="11" fill="#777" text-anchor="end">jsonb</text>
+<rect x="1513" y="253" width="280" height="68" rx="5" fill="#00000018"/>
+<rect x="1510" y="250" width="280" height="68" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M1510,280 V255 a5,5 0 0 1 5,-5 H1785 a5,5 0 0 1 5,5 V280 Z" fill="#1f5f99"/>
+<text x="1520" y="270" font-size="14" font-weight="700" fill="#fff">clinica.cid</text>
+<rect x="1511" y="280" width="278" height="19" fill="#fff6d6"/>
+<text x="1518" y="294" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="1562" y="294" font-size="12" font-weight="700" fill="#222" text-decoration="underline">codigo_cid</text>
+<text x="1782" y="294" font-size="11" fill="#777" text-anchor="end">varchar(8)</text>
+<line x1="1510" y1="299" x2="1790" y2="299" stroke="#eee"/>
+<text x="1518" y="313" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="313" font-size="12" font-weight="400" fill="#222">descricao</text>
+<text x="1782" y="313" font-size="11" fill="#777" text-anchor="end">varchar(255)</text>
+<rect x="1513" y="543" width="280" height="163" rx="5" fill="#00000018"/>
+<rect x="1510" y="540" width="280" height="163" rx="5" fill="#fff" stroke="#a8323a" stroke-width="1.6"/>
+<path d="M1510,570 V545 a5,5 0 0 1 5,-5 H1785 a5,5 0 0 1 5,5 V570 Z" fill="#a8323a"/>
+<text x="1520" y="560" font-size="14" font-weight="700" fill="#fff">sensivel.item_prescricao</text>
+<text x="1790" y="535" font-size="10.5" fill="#666" text-anchor="end" font-style="italic">associativa N:N (prescrição × medicamento)</text>
+<rect x="1511" y="570" width="278" height="19" fill="#fff6d6"/>
+<text x="1518" y="584" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="1562" y="584" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_item</text>
+<text x="1782" y="584" font-size="11" fill="#777" text-anchor="end">serial</text>
+<rect x="1511" y="589" width="278" height="19" fill="#e8f1fb"/>
+<line x1="1510" y1="589" x2="1790" y2="589" stroke="#eee"/>
+<text x="1518" y="603" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="1562" y="603" font-size="12" font-weight="400" fill="#222">id_prescricao</text>
+<text x="1782" y="603" font-size="11" fill="#777" text-anchor="end">int</text>
+<rect x="1511" y="608" width="278" height="19" fill="#e8f1fb"/>
+<line x1="1510" y1="608" x2="1790" y2="608" stroke="#eee"/>
+<text x="1518" y="622" font-size="10.5" font-weight="700" fill="#8a5a00">FK</text>
+<text x="1562" y="622" font-size="12" font-weight="400" fill="#222">id_medicamento</text>
+<text x="1782" y="622" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="1510" y1="627" x2="1790" y2="627" stroke="#eee"/>
+<text x="1518" y="641" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="641" font-size="12" font-weight="400" fill="#222">dosagem</text>
+<text x="1782" y="641" font-size="11" fill="#777" text-anchor="end">varchar(40)</text>
+<line x1="1510" y1="646" x2="1790" y2="646" stroke="#eee"/>
+<text x="1518" y="660" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="660" font-size="12" font-weight="400" fill="#222">posologia</text>
+<text x="1782" y="660" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<line x1="1510" y1="665" x2="1790" y2="665" stroke="#eee"/>
+<text x="1518" y="679" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="679" font-size="12" font-weight="400" fill="#222">quantidade</text>
+<text x="1782" y="679" font-size="11" fill="#777" text-anchor="end">int</text>
+<line x1="1510" y1="684" x2="1790" y2="684" stroke="#eee"/>
+<text x="1518" y="698" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="698" font-size="12" font-weight="400" fill="#222">duracao_dias</text>
+<text x="1782" y="698" font-size="11" fill="#777" text-anchor="end">int</text>
+<rect x="1513" y="753" width="280" height="106" rx="5" fill="#00000018"/>
+<rect x="1510" y="750" width="280" height="106" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M1510,780 V755 a5,5 0 0 1 5,-5 H1785 a5,5 0 0 1 5,5 V780 Z" fill="#1f5f99"/>
+<text x="1520" y="770" font-size="14" font-weight="700" fill="#fff">clinica.medicamento</text>
+<rect x="1511" y="780" width="278" height="19" fill="#fff6d6"/>
+<text x="1518" y="794" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="1562" y="794" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_medicamento</text>
+<text x="1782" y="794" font-size="11" fill="#777" text-anchor="end">serial</text>
+<line x1="1510" y1="799" x2="1790" y2="799" stroke="#eee"/>
+<text x="1518" y="813" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="813" font-size="12" font-weight="400" fill="#222">nome</text>
+<text x="1782" y="813" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<line x1="1510" y1="818" x2="1790" y2="818" stroke="#eee"/>
+<text x="1518" y="832" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="832" font-size="12" font-weight="400" fill="#222">principio_ativo</text>
+<text x="1782" y="832" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<line x1="1510" y1="837" x2="1790" y2="837" stroke="#eee"/>
+<text x="1518" y="851" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="851" font-size="12" font-weight="400" fill="#222">apresentacao</text>
+<text x="1782" y="851" font-size="11" fill="#777" text-anchor="end">varchar(60)</text>
+<rect x="1513" y="913" width="280" height="106" rx="5" fill="#00000018"/>
+<rect x="1510" y="910" width="280" height="106" rx="5" fill="#fff" stroke="#1f5f99" stroke-width="1.6"/>
+<path d="M1510,940 V915 a5,5 0 0 1 5,-5 H1785 a5,5 0 0 1 5,5 V940 Z" fill="#1f5f99"/>
+<text x="1520" y="930" font-size="14" font-weight="700" fill="#fff">clinica.exame</text>
+<rect x="1511" y="940" width="278" height="19" fill="#fff6d6"/>
+<text x="1518" y="954" font-size="10.5" font-weight="700" fill="#8a5a00">PK</text>
+<text x="1562" y="954" font-size="12" font-weight="700" fill="#222" text-decoration="underline">id_exame</text>
+<text x="1782" y="954" font-size="11" fill="#777" text-anchor="end">serial</text>
+<line x1="1510" y1="959" x2="1790" y2="959" stroke="#eee"/>
+<text x="1518" y="973" font-size="10.5" font-weight="700" fill="#8a5a00">UK</text>
+<text x="1562" y="973" font-size="12" font-weight="400" fill="#222">nome</text>
+<text x="1782" y="973" font-size="11" fill="#777" text-anchor="end">varchar(120)</text>
+<line x1="1510" y1="978" x2="1790" y2="978" stroke="#eee"/>
+<text x="1518" y="992" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="992" font-size="12" font-weight="400" fill="#222">codigo</text>
+<text x="1782" y="992" font-size="11" fill="#777" text-anchor="end">varchar(20)</text>
+<line x1="1510" y1="997" x2="1790" y2="997" stroke="#eee"/>
+<text x="1518" y="1011" font-size="10.5" font-weight="700" fill="#8a5a00"></text>
+<text x="1562" y="1011" font-size="12" font-weight="400" fill="#222">preparo</text>
+<text x="1782" y="1011" font-size="11" fill="#777" text-anchor="end">text</text>
+<rect x="30" y="1194" width="1770" height="90" rx="6" fill="#fafafa" stroke="#ddd"/>
+<text x="44" y="1216" font-size="13" font-weight="700" fill="#222">Legenda</text>
+<rect x="44" y="1230" width="18" height="14" fill="#fff6d6" stroke="#bbb"/>
+<text x="70" y="1242" font-size="12" fill="#333">PK = chave primária (sublinhada)</text>
+<rect x="464" y="1230" width="18" height="14" fill="#e8f1fb" stroke="#bbb"/>
+<text x="490" y="1242" font-size="12" fill="#333">FK = chave estrangeira</text>
+<rect x="44" y="1252" width="18" height="14" fill="#f3ead8" stroke="#bbb"/>
+<text x="70" y="1264" font-size="12" fill="#333">PK,FK = chave primária composta que também é FK</text>
+<rect x="464" y="1252" width="18" height="14" fill="#ffffff" stroke="#bbb"/>
+<text x="490" y="1264" font-size="12" fill="#333">UK = único (UNIQUE)</text>
+<g stroke="#333" stroke-width="1.4" fill="none">
+<line x1="930" y1="1237" x2="980" y2="1237"/><line x1="972" y1="1230" x2="972" y2="1244"/><line x1="962" y1="1230" x2="962" y2="1244"/>
+<line x1="930" y1="1261" x2="980" y2="1261"/><line x1="966" y1="1261" x2="980" y2="1254"/><line x1="966" y1="1261" x2="980" y2="1261"/><line x1="966" y1="1261" x2="980" y2="1268"/><circle cx="958" cy="1261" r="4.5" fill="#fff"/>
+</g>
+<text x="992" y="1241" font-size="12" fill="#333">exatamente um (lado 1)</text>
+<text x="992" y="1265" font-size="12" fill="#333">zero ou muitos (lado N) · o = opcional</text>
+<text x="1270" y="1241" font-size="12" fill="#333">Cabeçalho azul: schema clinica</text>
+<text x="1270" y="1265" font-size="12" fill="#a8323a">Cabeçalho vermelho: schema sensivel</text>
+</svg>
